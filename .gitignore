@@ -1,1 +1,4 @@
 #忽略cocopods除Podfile以外的文件
+Pods
+Podfile.lock
+douyuDemo.xcworkspace
