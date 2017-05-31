@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8F34FBD60D87E917F1A84D76 /* libPods-douyuDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6062CBB2BED9E7FED3BDD720 /* libPods-douyuDemo.a */; };
+		754FDFF3A5A460C8E6696A7D /* Pods_douyuDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D36596BA5C07CF37404E49D /* Pods_douyuDemo.framework */; };
 		F04878FA1ED2BC98002D992E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F04878F91ED2BC98002D992E /* main.m */; };
 		F04878FD1ED2BC98002D992E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F04878FC1ED2BC98002D992E /* AppDelegate.m */; };
 		F04879001ED2BC98002D992E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F04878FF1ED2BC98002D992E /* ViewController.m */; };
@@ -37,7 +37,8 @@
 
 /* Begin PBXFileReference section */
 		3CD04EE4F94D52DF9BB4AED2 /* Pods-douyuDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douyuDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-douyuDemo/Pods-douyuDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		6062CBB2BED9E7FED3BDD720 /* libPods-douyuDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-douyuDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D36596BA5C07CF37404E49D /* Pods_douyuDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_douyuDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE7935BC1ED66B520000A130 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		EEC2C2F6375E132C8C921523 /* Pods-douyuDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douyuDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-douyuDemo/Pods-douyuDemo.release.xcconfig"; sourceTree = "<group>"; };
 		F04878F51ED2BC98002D992E /* douyuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = douyuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04878F91ED2BC98002D992E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -62,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F34FBD60D87E917F1A84D76 /* libPods-douyuDemo.a in Frameworks */,
+				754FDFF3A5A460C8E6696A7D /* Pods_douyuDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +87,7 @@
 		19DD480D423C892473D5A95F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6062CBB2BED9E7FED3BDD720 /* libPods-douyuDemo.a */,
+				9D36596BA5C07CF37404E49D /* Pods_douyuDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -129,6 +130,7 @@
 				F04878FC1ED2BC98002D992E /* AppDelegate.m */,
 				F04878FE1ED2BC98002D992E /* ViewController.h */,
 				F04878FF1ED2BC98002D992E /* ViewController.m */,
+				AE7935BC1ED66B520000A130 /* PrefixHeader.pch */,
 				F04879011ED2BC98002D992E /* Main.storyboard */,
 				F04879041ED2BC98002D992E /* Assets.xcassets */,
 				F04879061ED2BC98002D992E /* LaunchScreen.storyboard */,
@@ -234,8 +236,9 @@
 				TargetAttributes = {
 					F04878F41ED2BC98002D992E = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = A5RG5MJ6UJ;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = T93R446Y3F;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Manual;
 					};
 					F048790D1ED2BC98002D992E = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -505,11 +508,16 @@
 			baseConfigurationReference = 3CD04EE4F94D52DF9BB4AED2 /* Pods-douyuDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = A5RG5MJ6UJ;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = T93R446Y3F;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = douyuDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-.douyuDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.weChat.rnyunxi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ea717f21-2661-4f66-af5e-ee9b10c37ee4";
+				PROVISIONING_PROFILE_SPECIFIER = dabaoceshiProfile;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -518,11 +526,16 @@
 			baseConfigurationReference = EEC2C2F6375E132C8C921523 /* Pods-douyuDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = A5RG5MJ6UJ;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = T93R446Y3F;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = douyuDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-.douyuDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.weChat.rnyunxi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ea717f21-2661-4f66-af5e-ee9b10c37ee4";
+				PROVISIONING_PROFILE_SPECIFIER = dabaoceshiProfile;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
